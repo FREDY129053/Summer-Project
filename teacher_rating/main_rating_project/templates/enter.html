@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating</title>
+    <link rel="stylesheet" href="{% static 'styles\css\enter_style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <div class="enter">
+            <h1>Вход</h1>
+        </div>
+        <div class="field">
+            <img src="{% static 'styles/images/log.svg' %}" class="icon" alt="">
+            <input type="text" placeholder="Логин" class="login" login="login" required>
+        </div>
+        <div class="field">
+            <img src="{% static 'styles/images/pass.svg' %}" class="icon" alt="">
+            <input type="text" placeholder="Пароль" class="password" password="password" required>
+        </div>
+        <div>
+            <label for="status"><img src="{% static 'styles/images/status.svg' %}" class="icon" alt=""></label>
+            <select name="status">
+                <option>Статус</option>
+                <option value="Студент">Студент</option>
+                <option value="Преподаватель">Преподаватель</option>
+                <option value="Руководитель">Руководитель</option>
+                <option value="Абитуриент">Абитуриент</option>
+              </select>
+            </div>
+            <div class="form-check">
+                <input class="checkbox" type="checkbox" value="" id="flexCheckDefault" name="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Согласие на обработку персональных данных
+                </label>
+            </div>
+            <button type="submit">Войти</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

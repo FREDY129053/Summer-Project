@@ -1,0 +1,134 @@
+body{
+    background-color: blue;
+
+}
+
+.form{
+    position: absolute;
+    width: 30%;
+    height: 70%;
+    margin: 8% 34%;
+    background: radial-gradient(100.37% 86.24% at 118.75% 91.48%, #4ADEDE 0%, #402EFE 100%);
+    border-radius: 5%;
+    text-align: center;
+
+}
+
+.enter{
+    margin: 15% 0% 10% 0%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2vh;
+}
+
+
+.login{
+    width: 68%;
+    height: 6vh;
+    margin-left: -1%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1vb;
+    align-items: center;
+    padding: 0 0 0 2%;
+    background-color: rgba(255, 255, 255, 0.86);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+
+}
+
+.password{
+    width: 68%;
+    height: 6vh;
+    margin-left: 0%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1vb;
+    align-items: center;
+    padding: 0 0 0 2%;
+    background-color: rgba(255, 255, 255, 0.86);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+select{
+    width: 70%;
+    height: 6vh;
+    margin-left: 0%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 1vb;
+    align-items: center;
+    padding: 0 0 0 1%;
+    background-color: rgba(255, 255, 255, 0.86);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.form-check{
+    margin-top: 5%;
+    margin-left: 3%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  .checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 0.2em solid #cdd4dc;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  .checkbox:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+
+  .checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  button{
+    margin-top: 7%;
+    width: 30%;
+    height: 10%;
+    border: none;
+    border-radius: 0.8em;
+    background-color: rgba(209, 229, 233, 0.86);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+  }
