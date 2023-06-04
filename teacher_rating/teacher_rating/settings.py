@@ -57,7 +57,7 @@ ROOT_URLCONF = 'teacher_rating.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['teacher_rating/main_rating_project/templates'],
+        'DIRS': ['main_rating_project\\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

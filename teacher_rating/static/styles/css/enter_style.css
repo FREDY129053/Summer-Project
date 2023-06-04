@@ -69,7 +69,14 @@ select{
     background-color: rgba(255, 255, 255, 0.86);
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 2000;
+    font-size: 1rem;
+}
+
+select option {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 1000;
     font-size: 1rem;
 }
 
