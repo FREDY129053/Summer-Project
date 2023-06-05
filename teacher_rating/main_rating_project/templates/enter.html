@@ -12,35 +12,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form class="form">
+    <form class="form" method="POST">
+        {% csrf_token %}
         <div class="enter">
             <h1>Вход</h1>
         </div>
         <div class="field">
             <img src="{% static 'styles/images/log.svg' %}" class="icon" alt="">
-            <input type="text" placeholder="Логин" class="login" login="login" required>
+            <input type="text" placeholder="Логин" class="login" login="login" required name="full_name">
         </div>
         <div class="field">
             <img src="{% static 'styles/images/pass.svg' %}" class="icon" alt="">
-            <input type="text" placeholder="Пароль" class="password" password="password" required>
+            <input type="number" min=0 placeholder="Пароль" class="password" password="password" required name="pass">
         </div>
         <div>
             <label for="status"><img src="{% static 'styles/images/status.svg' %}" class="icon" alt=""></label>
-            <select name="status">
-                <option>Статус</option>
-                <option value="Студент">Студент</option>
-                <option value="Преподаватель">Преподаватель</option>
-                <option value="Руководитель">Руководитель</option>
-                <option value="Абитуриент">Абитуриент</option>
-              </select>
-            </div>
-            <div class="form-check">
-                <input class="checkbox" type="checkbox" value="" id="flexCheckDefault" name="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Согласие на обработку персональных данных
-                </label>
-            </div>
-            <button type="submit">Войти</button>
-        </form>
+            <select name="status" placeholder="Статус">
+                <option value="student" type="text">Студент</option>
+                <option value="teacher" type="text">Преподаватель</option>
+                <option value="director" type="text">Руководитель</option>
+                <option value="matriculant" type="text">Абитуриент</option>
+            </select>
+        </div>
+        <div class="form-check">
+            <input class="checkbox" type="checkbox" value="" id="flexCheckDefault" name="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                Согласие на обработку персональных данных
+            </label>
+        </div>
+        <button type="submit">Войти</button>
+    </form>
 </body>
 </html>
